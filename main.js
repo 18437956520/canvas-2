@@ -139,7 +139,7 @@ function listenToUser() {
             console.log(x, y)
             using = true;
             if (eraserEnabled) {
-                ctx.clearRect(x, y, 10, 10);
+                ctx.clearRect(x-10, y-10, 20, 20);
             } else {
                 lastPoint = {
                     x: x,
@@ -156,7 +156,7 @@ function listenToUser() {
                 return
             }
             if (eraserEnabled) {
-                ctx.clearRect(x, y, 10, 10);
+                ctx.clearRect(x-10, y-10, 20, 20);
             } else {
                 var newPoint = {
                     x: x,
@@ -181,7 +181,7 @@ function listenToUser() {
             var y = painting.clientY;
             using = true;
             if (eraserEnabled) {
-                ctx.clearRect(x, y, 10, 10);
+                ctx.clearRect(x-10, y-10, 20, 20);
             } else {
                 lastPoint = {
                     x: x,
@@ -197,7 +197,7 @@ function listenToUser() {
                 return
             }
             if (eraserEnabled) {
-                ctx.clearRect(x, y, 10, 10);
+                ctx.clearRect(x-10, y-10, 20, 20);
             } else {
                 var newPoint = {
                     x: x,
